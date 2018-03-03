@@ -1,0 +1,28 @@
+\documentclass{book}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+\makeatletter
+\pagestyle{plain}
+%% Redefine chapter
+\def\@makechapterhead#1{%
+  \vspace*{10\p@}%
+  {\parindent \z@ \centering \reset@font
+        {\huge\hfill\hfill \bfseries Title-\thechapter \\
+        \hfill\hfill\huge \bfseries #1\par\nobreak}
+        \par\nobreak
+        \vspace*{2\p@}%
+        \vskip 100\p@
+  }}
+
+\begin{document}
+	\chapter{title}
+	\section{title}
+	\subsection{title}
+\end{document}
