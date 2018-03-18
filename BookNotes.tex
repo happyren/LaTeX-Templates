@@ -9,6 +9,7 @@
 	linkcolor=black,
 	urlcolor=black
 }
+\usepackage{subfigure}
 \makeatletter
 \pagestyle{plain}
 %% Redefine chapter
@@ -25,6 +26,11 @@
 \begin{document}
 	\chapter{title}
 	\section{title}
+	\begin{figure}
+		\centering
+		\subfigure[caption]{file}
+		\subfigure[caption]{file}
+	\end{figure}
 	\subsection{title}
 	\begin{description}
 		content...
