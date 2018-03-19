@@ -1,0 +1,28 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{xcolor}
+\usepackage{subfig}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+\usepackage{fix-cm}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{listings}
+\sisetup{detect-all}
+\makeatletter
+\providecommand\add@text{}
+\newcommand\tagaddtext[1]{%
+	\gdef\add@text{#1\gdef\add@text{}}}% 
+\renewcommand\tagform@[1]{%
+	\maketag@@@{\llap{\add@text\quad}(\ignorespaces#1\unskip\@@italiccorr)}%
+}
+\renewcommand*{\thesection}{Question \arabic{section}}
+\makeatother
+
+\begin{document}
+
+	\clearpage
+	
+	\section{}	
+\end{document}
